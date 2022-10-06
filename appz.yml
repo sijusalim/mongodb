@@ -25,4 +25,13 @@ volumes:
   mode: ReadWriteOnce
   
 properties:
-  revision : 04
+  DB_USER_ADMIN: admin
+  DB_USER_ADMIN_PASSWORD:
+    vault: DB_USER_ADMIN_PASSWORD
+  MONGOUSER1_PASSWORD:
+    vault: MONGOUSER1_PASSWORD
+  MONGOUSER2_PASSWORD:
+    vault: MONGOUSER2_PASSWORD
+  AUTH_ENABLE: 1
+  revision : 05
+  
