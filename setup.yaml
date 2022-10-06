@@ -1,0 +1,18 @@
+users:
+  - name: user1
+    password: $MONGOUSER1_PASSWORD
+  - name: user2
+    password: $MONGOUSER2_PASSWORD
+    
+
+databases:
+  - name: test1
+  - name: test2
+
+acl:
+  - database: test1
+    user: user1
+    access: dbOwner
+  - database: test2
+    user: user2
+    access: dbOwner
