@@ -16,6 +16,7 @@ deploy:
   replicas: 1
   port:
   - 27017
+  - 9216
 
 volumes:
 - claim: mongo-data
